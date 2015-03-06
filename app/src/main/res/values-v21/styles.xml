@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+    </style>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <!--item name="metaButtonBarStyle">@style/ButtonBar</item-->
+        <!--item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item-->
+    </style>
+</resources>

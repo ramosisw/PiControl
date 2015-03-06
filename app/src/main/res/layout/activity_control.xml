@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.itson.picontrol.vistas.Control">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/head"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_height="129.2dp"
+                    android:background="@drawable/raspberrypi" />
+
+                <TextView
+                    android:id="@+id/tv_taller_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/logo"
+                    android:gravity="right"
+                    android:text="@string/tv_taller_nombre"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_taller_instrucctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/tv_taller_nombre"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignRight="@+id/tv_taller_nombre"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_below="@+id/tv_taller_nombre"
+                    android:text="@string/tv_taller_instrucctor"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/toggleButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/head"
+                android:layout_marginBottom="30dp">
+
+                <ToggleButton
+                    android:id="@+id/btn_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:checked="false"
+                    android:text="New ToggleButton"
+                    android:padding="30dp" />
+
+                <ToggleButton
+                    android:id="@+id/btn_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:text="New ToggleButton"
+                    android:padding="30dp" />
+
+                <ToggleButton
+                    android:id="@+id/btn_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:checked="false"
+                    android:text="New ToggleButton"
+                    android:padding="30dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/seekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/toggleButtons"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
+
+                <ToggleButton
+                    android:id="@+id/btn_seek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="New ToggleButton"
+                    android:padding="30dp" />
+
+                <SeekBar
+                    android:id="@+id/seek_pwm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="1"
+                    android:layout_marginTop="20dp" />
+            </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:layout_below="@+id/seekBar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Enviar Comando"
+                    android:id="@+id/textView2" />
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_height="wrap_content" android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/textView2">
+                    <EditText
+                        android:id="@+id/et_comando"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:singleLine="true">
+                    </EditText>
+                    <Button
+                        android:id="@+id/btn_enviar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enviar">
+                    </Button>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

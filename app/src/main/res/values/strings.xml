@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PiControl</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_startup">Startup</string>
+    <string name="tv_host">IP/HOST of RPi</string>
+    <string name="tv_port">PORT</string>
+    <string name="btn_conectar">Conectar</string>
+    <string name="title_activity_control">Control</string>
+    <string name="tv_taller_nombre">Taller Raspberry Pi</string>
+    <string name="tv_taller_instrucctor">Julio C. Ramos</string>
+    <string name="tv_consola">Consola</string>
+
+</resources>
