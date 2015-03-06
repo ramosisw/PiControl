@@ -13,3 +13,5 @@
 <br/>
 <p>El <b>codigo fuente</b> del servidor para la Raspberry se encuentra en este respositorio: <a href="https://github.com/ramosisw/ServidorPiControl_Python" target="new">ServidorPiControl_Python</a></p>
 
+<p><b><span style="color:red;">*<span>Esta aplicacion fue desarrollada en AndroidStudio</b></p>
+
